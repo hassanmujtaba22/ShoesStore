@@ -13,7 +13,7 @@ function ProductDetail() {
             margin: "10px",
         },
         card: {
-            width: "100%",
+            width: "70%",
             margin: "5px",
             "&:hover": {
                 backgroundColor: "none",
@@ -52,7 +52,9 @@ function ProductDetail() {
     const shoe = data.shoes[slug]
 
     if (!shoe) {
-        return <h2>Not Found</h2>
+        return (
+        <div className="productNotFount"><h1>Product Not Found</h1></div>
+        )
     }
     const { name, img, price } = shoe
     return (

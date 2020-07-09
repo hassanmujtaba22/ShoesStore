@@ -1,0 +1,24 @@
+a:hover{
+    color: transparent;
+    text-decoration: none;
+}
+.notfound, .productNotFount {
+    height: 86vh;
+    width: 100%;
+    justify-content: center;
+}
+.notfound h1, .productNotFount h1{
+    font-size: 5rem;
+    color: red;
+    text-align: center;
+}
+.carousel .d-block{
+    width: 100%;
+    height: 90vh;
+}
+.carousel .carousel-caption{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    
+}

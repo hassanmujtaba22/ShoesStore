@@ -28,6 +28,7 @@ const useStyles = makeStyles(theme => ({
         "&:hover": {
             fontWeight: "bolder",
             color: "red",
+            textDecoration: "underline"
         }
     },
     navIcon: {
@@ -46,20 +47,17 @@ function Header() {
         <Grid container className={classes.root}>
             <AppBar className={classes.nav} position="sticky">
                 <Toolbar>
-                    {/* <Grid container item> */}
+                    <Link className={classes.logo} to="/">                    
                         <Typography className={classes.logo} variant="h5">
                             SHOES STORE
                         </Typography>
-                    {/* </Grid> */}
-
-                    {/* <Grid container item> */}
+                    </Link>
                     <Typography>
                         <Link to="/" className={classes.navLink} component="button">Home</Link>{" "}
                         <Link to="/products" className={classes.navLink} component="button">Products</Link>{" "}
                         <Link to="/about" className={classes.navLink} component="button">About</Link>
                     </Typography>
                     <ShoppingCartIcon className={classes.navIcon} />
-                    {/* </Grid> */}
                 </Toolbar>
             </AppBar>
         </Grid>
